@@ -8,17 +8,19 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>GigalinkAdminDashboard - Editor</title>
+    <title>GigalinkAdminDashboard - SuperAdmin</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @yield('styles')
-
 </head>
 <body>
   @include('inc.navbar')
-    <div id="app">
-            @yield('content')
+  @include('inc.manage')
+
+  <div class="management-area" id="app">
+      
+      @yield('content')
     </div>
 
     <!-- Scripts -->
