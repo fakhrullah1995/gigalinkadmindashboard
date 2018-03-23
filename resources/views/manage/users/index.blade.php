@@ -2,16 +2,19 @@
 
 @section('content')
 
+<div class="column is-12">
 <div class="flex-container">
         <div class="columns m-t-10">
           <div class="column">
             <h1 class="title">Manage Users</h1>
           </div>
           <div class="column">
-            <a href="{{route('users.create')}}" class="button is-primary is-pulled-right"><i class="fa fa-user-plus m-r-10"></i> Create New User</a>
+            <a href="{{route('users.create')}}" class="button is-primary is-pulled-right">
+                <i class="fa fa-user-plus m-r-5"></i>Create New User
+            </a>
           </div>
         </div>
-        <hr>
+        <hr class="m-t-0">
 
         <div class="card">
             <div class="card-content">
@@ -22,7 +25,6 @@
                                     <th>Name</th>
                                     <th>Email</th>
                                     <th>Date Created</th>
-                                   
                                     <th>Actions</th>
                                 </tr>
                             </thead>
@@ -34,7 +36,7 @@
                                     <th>{{$user->email}}</th>
                                     <th>{{$user->created_at->toFormattedDateString()}}</th>
                                     
-                                    <th><a class="button is-outlined" href="{{route('users.edit',$user->id)}}">Edit</a></th>
+                                    <th><a class="button is-outlined" href="{{route('users.show',$user->id)}}">Show</a></th>
                                 </tr>
                                 @endforeach
                             </tbody>
@@ -45,4 +47,5 @@
 
 </div>
 
+</div>
 @endsection

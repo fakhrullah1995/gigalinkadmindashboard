@@ -1,6 +1,5 @@
-
-
-{{--  <div class="side-menu">
+<div class="column is-3">
+<div class="side-menu">
         <aside class="menu m-t-30 m-l-10">
           <p class="menu-label">
             General
@@ -17,12 +16,12 @@
             <li><a href="#">Roles &amp; Permissions</a></li>
           </ul>
         </aside>
-      </div>  --}}
-      
+      </div>
+</div>
 
   
          
-            <div class="column is-2">
+            {{--  <div class="column is-3">
               <aside class="menu m-l-10">
                 <p class="menu-label">
                   General
@@ -44,6 +43,20 @@
                 </ul>
               </aside>
 
-            </div>
+            </div>    --}}
 
-        
+
+
+
+
+
+             {{--  <div class="container">
+                <div class="columns">
+                  <div class="column is-3">
+                    colum is-3
+                  </div>
+                  <div class="column is-9">
+                    colum is-9
+                  </div>
+                </div>
+              </div>  --}}

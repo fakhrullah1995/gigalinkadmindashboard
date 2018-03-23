@@ -15,13 +15,18 @@
     @yield('styles')
 </head>
 <body>
-  @include('inc.navbar')
-  @include('inc.manage')
 
-  <div class="management-area" id="app">
-      
+  @include('inc.navbar')
+    <div class="container">
+        <div class="columns ">
+  @include('inc.manage')
+            <div class="management-area " id="app">
       @yield('content')
+            </div>
+     </div>
     </div>
+
+
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
